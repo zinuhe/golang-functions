@@ -16,7 +16,7 @@ func returnFunc(x string) func(){
 	return func() { fmt.Println(x) }
 }
 
-func Calculate(x int) (result int) {
+func calculate(x int) (result int) {
     result = x + 2
     return result
 }
