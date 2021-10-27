@@ -2,8 +2,11 @@ package main
 
 import "fmt"
 
+// declare function type
 type Operation func(balance, cantidad int) int
 
+
+// function which its return type is an Operation (which is also a function)
 func crearOperation(tipo string) Operation {
 	if tipo == "suma" {
 		return func(balance, cantidad int) int { return balance + cantidad }
